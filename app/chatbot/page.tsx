@@ -25,7 +25,9 @@ export default function Chatbot() {
         <div className="chat-body">
 
           <div className="msg bot">Oi! Vi que você curte miniaturas de RPG. Quer sugestões parecidas com o que já comprou?</div>
+
           <div className="msg user">Sim, algo de dragões</div>
+
           <div className="msg bot">
 
             Encontrei essas opções:
@@ -77,10 +79,9 @@ export default function Chatbot() {
         .chat-avatar { width:30px; height:30px; border-radius:50%; background:var(--purple); display:flex; align-items:center; justify-content:center; font-size:14px; color:var(--bg); font-weight:500; }
         .chat-title { font-size:13px; font-weight:500; }
         .chat-subtitle { font-size:11px; color:var(--mint); }
-        .chat-
-        .msg { max-width:80%; padding:10px 12px; border-radius:12px; font-size:13px; line-height:1.4; }
-        .msg.bot { background:var(--bg); border:1px solid var(--border); align-self:flex-start; border-bottom-left-radius:4px; }
-        .msg.user { background:var(--purple); color:var(--bg); align-self:flex-end; border-bottom-right-radius:4px; }
+        .msg { max-width:80%; padding:10px 12px; border-radius:12px; font-size:13px; line-height:1.4; margin: 10px; }
+        .msg.bot { background:var(--bg); border:1px solid var(--border); justify-self: flex-start; border-bottom-left-radius:4px; }
+        .msg.user { background:var(--purple); color:var(--bg); border:1px solid var(--border); justify-self: flex-end; border-bottom-right-radius:4px; }
         .suggestion-card { display:flex; gap:10px; align-items:center; background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:8px; margin-top:4px; }
         .suggestion-card .thumb { width:36px; height:36px; border-radius:6px; background:#23273A; flex-shrink:0; }
         .suggestion-name { font-size:12px; font-weight:500; }

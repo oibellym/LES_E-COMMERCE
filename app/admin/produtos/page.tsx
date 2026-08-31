@@ -25,7 +25,7 @@ export default function AdminProdutos() {
 
         <div className="row2">
           <div><label>Nome do produto</label><input type="text" placeholder="Ex: Dragão vermelho base hexagonal" /></div>
-          <div><label>Categoria</label><select><option>Action figures</option><option>Miniaturas RPG</option></select></div>
+          <div><label>Categoria</label><select><option>Action figures</option><option>Miniaturas RPG</option><option>Acessórios</option><option>Suportes</option><option>Decorativos</option></select></div>
         </div>
 
         <label>Descrição</label>

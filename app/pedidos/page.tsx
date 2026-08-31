@@ -100,10 +100,10 @@ export default function Pedidos() {
         .item-row { display:flex; gap:12px; align-items:center; padding:10px 0; border-bottom:1px solid var(--border); font-size:13px; }
         .item-row .thumb { width:40px; height:40px; border-radius:8px; background:#23273A; }
         .actions { display:flex; gap:10px; margin-top:24px; }
-        .btn { flex:1; border-radius:10px; padding:12px; font-size:13px; font-weight:500; cursor:pointer; text-align:center; }
-        .btn-primary { background:var(--purple); color:var(--bg); border:none; }
-        .btn-secondary { background:none; border:1px solid var(--border); color:var(--text-primary); }
-        .btn-danger { background:none; border:1px solid var(--red); color:var(--red); }
+        .btn { flex:1; border-radius:10px; padding:12px; font-size:13px; font-weight:500; cursor:pointer; }
+        .btn-primary { background:var(--purple); color:var(--bg); border:none; text-align: center; }
+        .btn-secondary { background:none; border:1px solid var(--border); color:var(--text-primary); text-align: center; }
+        .btn-danger { background:none; border:1px solid var(--red); color:var(--red); text-align: center; }
       `}</style>
     </>
   );

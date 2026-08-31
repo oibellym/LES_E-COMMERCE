@@ -74,7 +74,7 @@ export default function EnderecoEntrega() {
         .form-row { margin-bottom:12px; }
         .form-row label { display:block; font-size:12px; color:var(--text-secondary); margin-bottom:6px; }
         .form-row input { width:100%; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:10px 12px; color:var(--text-primary); font-size:13px; }
-        .continue-btn { width:100%; background:var(--purple); color:var(--bg); border:none; border-radius:10px; padding:14px; font-weight:500; font-size:14px; margin-top:24px; cursor:pointer; }
+        .continue-btn { display: block; width:225px; text-align: center; background:var(--purple); color:var(--bg); border:none; border-radius:10px; padding:14px; font-weight:500; font-size:14px; margin-top:24px; cursor:pointer; }
       `}</style>
       
     </>

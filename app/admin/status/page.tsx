@@ -84,16 +84,16 @@ export default function AdminStatus() {
 
         <div className="exchange-section">
 
-          <div className="col-head">Trocas pendentes</div>
+          <div className="col-head">Trocas Solicitadas</div>
 
           <div className="exchange-row">
             <span>#PED-08099 — Fernanda Lima — troca solicitada: Ovo de dragão colecionável</span>
-            <div className="exchange-actions"><button className="btn-sm btn-authorize">Autorizar troca</button></div>
+            <div className="exchange-actions"><select><option>TROCA ACEITA</option><option>TROCA NEGADA</option><option>ITEM ENVIADO</option><option>ITEM RECEBIDO</option><option>TROCA PROCESSADA</option></select></div>
           </div>
 
           <div className="exchange-row">
             <span>#PED-08050 — Bruno Alves — troca autorizada, aguardando item</span>
-            <div className="exchange-actions"><button className="btn-sm btn-receive">Confirmar recebimento</button></div>
+            <div className="exchange-actions"><select><option>TROCA ACEITA</option><option>TROCA NEGADA</option><option>ITEM ENVIADO</option><option>ITEM RECEBIDO</option><option>TROCA PROCESSADA</option></select></div>
           </div>
 
         </div>
@@ -121,6 +121,7 @@ export default function AdminStatus() {
         .exchange-section { margin-top:32px; }
         .exchange-row { display:flex; justify-content:space-between; align-items:center; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px 18px; margin-bottom:10px; font-size:13px; }
         .exchange-actions { display:flex; gap:8px; }
+        select { width: 135px; background:var(--surface); border:1px solid var(--purple); border-radius:8px; padding:9px 12px; color:var(--purple); font-size:13px; }
         .btn-sm { padding:6px 12px; border-radius:6px; font-size:11px; cursor:pointer; }
         .btn-authorize { background:var(--purple); color:var(--bg); border:none; }
   .btn-receive { background:none; border:1px solid var(--mint); color:var(--mint); }
