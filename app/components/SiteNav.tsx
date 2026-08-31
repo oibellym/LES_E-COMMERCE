@@ -22,6 +22,7 @@ const CLIENTE_LINKS = [
   { href: "/cupons", label: "Cupons" },
   { href: "/chatbot", label: "Chatbot" },
   { href: "/login", label: "Login" },
+  { href: "/cadastro", label: "Cadastro" },
 ];
 
 const ADMIN_LINKS = [
