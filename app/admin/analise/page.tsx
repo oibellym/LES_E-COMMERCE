@@ -29,7 +29,7 @@ export default function AdminAnalise() {
           <span style={{color: "var(--text-secondary)", fontSize: "12px"}}>até</span>
           <input type="text" defaultValue="ago 2026" />
           <div className="cat-chip active">Action figures</div>
-          <div className="cat-chip active">Miniaturas RPG</div>
+          <div className="cat-chip">Miniaturas RPG</div>
           <div className="cat-chip">Suportes gamer</div>
           <div className="cat-chip">Luminárias geek</div>
           <button className="export-btn">↓ Exportar planilha</button>
@@ -42,19 +42,18 @@ export default function AdminAnalise() {
 
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "60px"}}></div><div className="month-label">jan</div></div>
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "90px"}}></div><div className="month-label">fev</div></div>
-            <div className="month-col"><div className="bar-line-point1" style={{marginBottom: "70px"}}></div><div className="month-label">mar</div></div>
+            <div className="month-col"><div className="bar-line-point" style={{marginBottom: "70px"}}></div><div className="month-label">mar</div></div>
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "120px"}}></div><div className="month-label">abr</div></div>
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "100px"}}></div><div className="month-label">mai</div></div>
-            <div className="month-col"><div className="bar-line-point1" style={{marginBottom: "150px"}}></div><div className="month-label">jun</div></div>
+            <div className="month-col"><div className="bar-line-point" style={{marginBottom: "150px"}}></div><div className="month-label">jun</div></div>
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "130px"}}></div><div className="month-label">jul</div></div>
-            <div className="month-col"><div className="bar-line-point1" style={{marginBottom: "180px"}}></div><div className="month-label">ago</div></div>
+            <div className="month-col"><div className="bar-line-point" style={{marginBottom: "180px"}}></div><div className="month-label">ago</div></div>
 
           </div>
 
           <div className="legend">
 
             <div className="legend-item"><div className="legend-dot" style={{background: "var(--purple)"}}></div>Action figures</div>
-            <div className="legend-item"><div className="legend-dot" style={{background: "var(--mint)"}}></div>Miniaturas RPG</div>
 
           </div>
   
@@ -81,7 +80,6 @@ export default function AdminAnalise() {
         .chart-area { height:260px; display:flex; align-items:flex-end; gap:24px; padding:0 10px; border-bottom:1px solid var(--border); position:relative; }
         .month-col { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%; gap:4px; position:relative; }
         .bar-line-point { width:8px; height:8px; border-radius:50%; background:var(--purple); }
-        .bar-line-point1 { width:8px; height:8px; border-radius:50%; background:var(--mint); }
         .month-label { font-size:10px; color:var(--text-secondary); font-family:'JetBrains Mono',monospace; margin-top:8px; }
         .legend { display:flex; gap:20px; margin-top:16px; }
         .legend-item { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-secondary); }
