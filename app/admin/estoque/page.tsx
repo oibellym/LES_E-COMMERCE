@@ -3,15 +3,20 @@ import SiteNav from "../../components/SiteNav";
 export default function AdminEstoque() {
   return (
     <>
-      <SiteNav current="/admin/estoque" />
+
+    <SiteNav current="/admin/estoque"/>
+
+    <div style={{ display: 'flex', minHeight: '100vh', width: '100%' }}>
 
       <div className="sidebar">
+
         <div className="logo">forge<span>craft</span></div>
         <a href="/admin" className="nav-item">Clientes e pedidos</a>
         <a href="/admin/status" className="nav-item">Status de pedidos</a>
         <a href="/admin/produtos" className="nav-item">Produtos</a>
         <a href="/admin/estoque" className="nav-item active">Estoque</a>
         <a href="/admin/analise" className="nav-item">Análise de vendas</a>
+
       </div>
 
       <main>
@@ -19,11 +24,13 @@ export default function AdminEstoque() {
         <h1>Entrada em estoque</h1>
 
         <div className="add-row">
+
           <select><option>Selecionar produto</option></select>
           <input type="text" placeholder="Quantidade" />
           <input type="text" placeholder="Valor de custo (R$)" />
           <input type="text" placeholder="Fornecedor" />
           <button>Registrar entrada</button>
+
         </div>
 
         <table>
@@ -31,7 +38,6 @@ export default function AdminEstoque() {
           <thead>
 
             <tr><th>Produto</th><th>Qtd</th><th>Custo</th><th>Fornecedor</th><th>Data</th></tr>
-
             
           </thead>
 
@@ -45,7 +51,6 @@ export default function AdminEstoque() {
         </table>
 
       </main>
-
 
       <style>{`
       * { box-sizing:border-box; margin:0; padding:0; }
@@ -65,6 +70,8 @@ export default function AdminEstoque() {
         td { padding:10px; font-size:12px; border-bottom:1px solid var(--border); }
         .price { font-family:'JetBrains Mono',monospace; }
       `}</style>
+
+    </div>
     </>
   );
 }

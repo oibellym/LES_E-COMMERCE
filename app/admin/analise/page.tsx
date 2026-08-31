@@ -2,22 +2,29 @@ import SiteNav from "../../components/SiteNav";
 
 export default function AdminAnalise() {
   return (
+    <>
 
-    <div>
+    <SiteNav current="/admin/analise"/>
 
-      <SiteNav current="/admin/analise"/>
+    <div style={{ display: 'flex', minHeight: '100vh', width: '100%' }}>
 
       <div className="sidebar">
+
         <div className="logo">forge<span>craft</span> <span style={{fontSize: "10px", color: "var(--text-secondary)"}}>admin</span></div>
         <a href="/admin" className="nav-item">Clientes e pedidos</a>
         <a href="/admin/status" className="nav-item">Status de pedidos</a>
         <a href="/admin/produtos" className="nav-item">Produtos</a>
         <a href="/admin/estoque" className="nav-item">Estoque</a>
         <a href="/admin/analise" className="nav-item active">Análise de vendas</a>
+
       </div>
+
       <main>
+
         <h1>Análise de vendas</h1>
+
         <div className="filters-row">
+
           <input type="text" defaultValue="jan 2026" />
           <span style={{color: "var(--text-secondary)", fontSize: "12px"}}>até</span>
           <input type="text" defaultValue="ago 2026" />
@@ -26,10 +33,13 @@ export default function AdminAnalise() {
           <div className="cat-chip">Suportes gamer</div>
           <div className="cat-chip">Luminárias geek</div>
           <button className="export-btn">↓ Exportar planilha</button>
+
         </div>
 
         <div className="chart-card">
+
           <div className="chart-area">
+
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "60px"}}></div><div className="month-label">jan</div></div>
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "90px"}}></div><div className="month-label">fev</div></div>
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "70px"}}></div><div className="month-label">mar</div></div>
@@ -38,14 +48,19 @@ export default function AdminAnalise() {
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "150px"}}></div><div className="month-label">jun</div></div>
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "130px"}}></div><div className="month-label">jul</div></div>
             <div className="month-col"><div className="bar-line-point" style={{marginBottom: "180px"}}></div><div className="month-label">ago</div></div>
+
           </div>
+
           <div className="legend">
+
             <div className="legend-item"><div className="legend-dot" style={{background: "var(--purple)"}}></div>Action figures</div>
             <div className="legend-item"><div className="legend-dot" style={{background: "var(--mint)"}}></div>Miniaturas RPG</div>
-          </div>
-        </div>
-      </main>
 
+          </div>
+  
+        </div>
+
+      </main>
 
       <style>{`
       * { box-sizing:border-box; margin:0; padding:0; }
@@ -73,5 +88,6 @@ export default function AdminAnalise() {
       `}</style>
 
     </div>
+    </>
   );
 }

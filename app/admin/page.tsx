@@ -2,40 +2,55 @@ import SiteNav from "../components/SiteNav";
 
 export default function AdminClientesPedidos() {
   return (
-    <div>
-      <SiteNav current="/admin" />
+    <>
+
+    <SiteNav current="/admin"/>
+
+    <div style={{ display: 'flex', minHeight: '100vh', width: '100%' }}>
 
       <div className="sidebar">
+
         <div className="logo">forge<span>craft</span> <span style={{fontSize: "10px", color: "var(--text-secondary)"}}>admin</span></div>
         <a href="/admin" className="nav-item active">Clientes e pedidos</a>
         <a href="/admin/status" className="nav-item">Status de pedidos</a>
         <a href="/admin/produtos" className="nav-item">Produtos</a>
         <a href="/admin/estoque" className="nav-item">Estoque</a>
         <a href="/admin/analise" className="nav-item">Análise de vendas</a>
+
       </div>
+
       <main>
+
         <h1>Clientes e pedidos</h1>
+
         <div className="tabs">
           <div className="tab active">Pedidos</div>
           <div className="tab">Clientes</div>
         </div>
+
         <div className="search-row"><input type="text" placeholder="Buscar por cliente, número do pedido..." /></div>
+
         <table>
+
           <thead>
             <tr><th>Pedido</th><th>Cliente</th><th>Data</th><th>Itens</th><th>Total</th><th>Status</th></tr>
           </thead>
+
           <tbody>
+
             <tr><td className="price">#PED-08231</td><td>Isabelly Souza</td><td>18 ago 2026</td><td>3</td><td className="price">R$ 313,92</td><td><span className="pill p-transito">em trânsito</span></td></tr>
             <tr><td className="price">#PED-08230</td><td>Carlos Menezes</td><td>18 ago 2026</td><td>1</td><td className="price">R$ 89,90</td><td><span className="pill p-processando">processando</span></td></tr>
             <tr><td className="price">#PED-08229</td><td>Fernanda Lima</td><td>17 ago 2026</td><td>2</td><td className="price">R$ 174,40</td><td><span className="pill p-entregue">entregue</span></td></tr>
             <tr><td className="price">#PED-08114</td><td>Isabelly Souza</td><td>02 ago 2026</td><td>1</td><td className="price">R$ 64,50</td><td><span className="pill p-entregue">entregue</span></td></tr>
             <tr><td className="price">#PED-08113</td><td>Bruno Alves</td><td>02 ago 2026</td><td>4</td><td className="price">R$ 402,10</td><td><span className="pill p-entregue">entregue</span></td></tr>
           </tbody>
+
         </table>
+
       </main>
 
 
-            <style>{`
+      <style>{`
       * { box-sizing:border-box; margin:0; padding:0; }
         
         .sidebar { width:220px; min-height:100vh; border-right:1px solid var(--border); padding:24px 16px; }
@@ -59,7 +74,9 @@ export default function AdminClientesPedidos() {
         .p-entregue { background:rgba(0,224,184,0.12); color:var(--mint); }
         .p-processando { background:rgba(255,180,84,0.15); color:var(--amber); }
         .price { font-family:'JetBrains Mono',monospace; }
-            `}</style>
+      `}</style>
+
     </div>
+    </>
   );
 }
