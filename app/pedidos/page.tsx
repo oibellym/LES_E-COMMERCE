@@ -71,7 +71,6 @@ export default function Pedidos() {
 
       </main>
 
-
       <style>{`
       * { box-sizing:border-box; margin:0; padding:0; }
         
