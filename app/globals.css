@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
+/* ============================================
+   VARIÁVEIS DE COR DO PROJETO (design system)
+   Usadas em todas as páginas via var(--nome)
+   ============================================ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #12141A;
+  --surface: #1C1F29;
+  --purple: #7C5CFF;
+  --mint: #00E0B8;
+  --amber: #FFB454;
+  --red: #FF5C6C;
+  --text-primary: #F5F3FF;
+  --text-secondary: #8B90A3;
+  --border: #2A2E3A;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #000000;
-  }
+html, body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+a {
+  color: inherit;
+  text-decoration: none;
 }
